@@ -45,26 +45,24 @@
 							chrome 91 win10 ENG Chrome in french</p>
 				</section>
 				<section>
-					<h1>Tools used to test</h1>
+					<h1 style="font-size:4rem;">Tools used to test</h1>
 					<h2>Automatic, in the browser</h2>
 					<ul>
 						<li>Lighthouse (Chrome / Desktop) : 81 / 100</li>
 						<li>HTML Code Sniffer : 97 A / 128 AA</li>
 						<li>Wave 77 errors / 54 erreurs de contraste</li>
 					</ul>
+					
+				</section>
+				
+
+				<section>
 					<h2>Manual, in the browser</h2>
 					<ul>
 						<li>Keyboard navigation</li>
 						<li>Web Dev toolbar CSS, desactivate images , display alt</li>
 						<li>Narrator English and French</li>
-					</ul> 
-				</section>
-				
-
-				<section>
-						<h2>Survey</h2>
-						<p>Do you know NPM ?</p>
-						<p>Do you use automatic tools for accessibility audits?</p> 
+					</ul>  
 					
 				</section>
 				<section>
@@ -76,48 +74,79 @@
 							<li>BBC a11y</li>
 						</ul>
 				</section>
+
 				<section>
-						<h2>Why this tools (1/2)?</h2>
-						<ul>
-							<li>They are free to use</li>
-							<li>Available via GIT and NPM</li>
-							<li>They are open source</li>
-							<li>You can contribute</li>
-						</ul>
-				</section>
-				<section>
-					<h2>Why this tools (2/2)?</h2>
+					<h2>What was to be found?</h2>
 					<ul>
-						<li>Dynamic communities</li>
-						<li>Recent commits in Github</li>
-						<li>Recent publish in NPM</li>
-						<li>If the tool rely on WCAG 2.1 it's better!</li>
+						<li>2 A level</li>
+						<li>2 AA level</li>
+						<li>1 Best Practice</li>
 					</ul>
-			</section>
-				<section>
-						<h2>NPM</h2>
-						<ul>
-							<li>Stands for Node Package Manager</li>
-							<li>Default package manager for the JavaScript runtime environment Node.js</li>
-							<li></li>
-						</ul>
-				</section>
-				<section>
-						<h2>Pa11y</h2>
-						<p>Uses HTML Code Sniffer Engine</p>
-						<p><a href="https://www.npmjs.com/package/pa11y">pa11y npm page</a></p>
-								
+			    </section>
+			<section>
+				<h2>4 types of impairements</h2>
+				<ul>
+					<li>Visual</li>
+					<li>Cognitive</li>
+					<li>Hearing</li>
+					<li>Motor</li>
+				</ul>
+		    </section>
+			<section>
+				<h2>Level A</h2>
+				<ul>
+						<li>4.1.2</li>
+						<li>1.1.1</li>
+						<li>2.5.1 (WCAG 2.1)</li>
+						<li>1.2.2 Captions</li>
+						<li>3.2.1 Context change</li>
+				</ul>
+		    </section>
+			<section>
+				<h2>Level AA</h2>
+				<ul>
+					<li>2.4.7</li>
+					<li>1.4.3</li>
+						
+					
+				</ul>
+		    </section>
+			<section>
+				<h2>Best Practice</h2>
+				<ul>
+					<li></li>
+					<li></li>
+						
+					
+				</ul>
+		    </section>
+			<section>
+				<h1>Sources</h1>
+				<ul>
+					<li>W3C WGAG 2.1 - english - https://www.w3.org/TR/WCAG21/</li>
+					<li>W3C WCAG 2.0 - FR https://www.w3.org/Translations/WCAG20-fr/ traduction officielle en français Braillenet</li>
+					<li>RGAA 4.1 - https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/</li>
 							
-						<pre style="width:90%">
-	npm install pa11y --save-dev
-						</pre>
-						<p>To use it you can add in "scripts"<br/>in your package.json file</p>
-						<pre style="width:90%">
-	"scripts": {
-		"pa11y": "pa11y"
-	}
-						</pre>
-				</section>
+					
+				</ul>
+		    </section> 
+			<section>
+				<h1>Sources (2)</h1>
+				<ul>
+					<li>WAI https://www.w3.org/WAI/media/av/</li>
+					<li>RAAMM https://labo.raamm.org/formation/</li>
+					<li>WCAG 2.1 https://www.levelaccess.com/wcag-2-1-exploring-new-success-criteria/</li>
+					<li>RAAMM clientèles cibles https://labo.raamm.org/formation/clienteles-cibles/</li>
+								
+					
+				</ul>
+		    </section>	
+				
+				
+				
+				
+				
+				
 				
 				
 				<section>
@@ -132,100 +161,6 @@
 			</section>			
 				
 			
-
-
-			<section>
-					<h2>Lighthouse</h2>
-					<p>Project by Google<br/>included in Chrome</p>
-					<p>Uses Axe for accessibility</p>
-					<p><a href="https://www.npmjs.com/package/lighthouse">Documentation about Lighthouse on npm</a></p>
-							
-						
-				    <pre style="width:90%">
-npm install -g lighthouse
-					</pre>
-					<p>If installed globally you can use it directly in command line</p>
-					<pre style="width:90%">
-lighthouse https://deque.com
-					</pre>
-			</section>
-			<section>
-					<h2>Lighthouse</h2>
-					<p>Can also be runned on multiple urls</p>
-					<p></p>
-					<p><a href="https://edit.co.uk/blog/save-time-by-batch-processing-lighthouse-audit-files-from-the-command-line/">Lighthouse from the command line on multiple urls</a></p>
-							
-			</section>
-			<section>
-					<h2>BBC a11y</h2>
-					<p>Project by BBC in the UK to test<br/>their own accessibility standards</p>
-					<p><a href="https://github.com/bbc/bbc-a11y">Documentation on Github</a></p>
-							
-						
-				    <pre style="width:90%">
-npm install bbc-a11y --save-dev
-					</pre>
-					<p>To use it you can add in "scripts" in your package.json file</p>
-					<pre style="width:90%">
-"scripts": {
-	"a11y": "bbc-a11y"
-}
-					</pre>
-			</section>
-			<section>
-					<h2>BBC a11y</h2>
-					<p>Let's test it!</p>
-					<pre style="width:90%">
-npm run a11y https://bbc.co.uk						
-npm run a11y https://pa11y.org
-				</pre>
-			</section>
-			<section>
-				<h2>Fun facts with BBC a11y</h2>
-				<ol>
-					<li>BBC Homepage have 98 errors with their tools!</li>
-					<li>Pa11y website have 34 errors with bbc a11y</li>
-				</ol>
-				
-
-		</section>
-		<section>
-
-				<h2>Some thoughts about automatic testing</h2>
-				<div style="display: flex; flex-direction: row">
-					<div>
-						<blockquote style="width:80%" class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">While automatic testing tools are useful, testing with <a href="https://twitter.com/hashtag/disabled?src=hash&amp;ref_src=twsrc%5Etfw">#disabled</a> user testers, as we have always done, is extremely valuable and brings unique <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> insights. Working in partnership with disabled people is productive and important.</p>&mdash; Robyn Hunt (@AccEase) <a href="https://twitter.com/AccEase/status/1018590751930789888?ref_src=twsrc%5Etfw">15 juillet 2018</a></blockquote>
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-					<div style="margin-left:3rem;">
-						<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">&quot;Automation can do a lot of grunt work  for you – but in the end, you’re going to need to check your work.&quot; nailed<a href="https://t.co/KMkcfrpwh6">https://t.co/KMkcfrpwh6</a></p>&mdash; Steve Faulkner (@stevefaulkner) <a href="https://twitter.com/stevefaulkner/status/828668305846202370?ref_src=twsrc%5Etfw">6 février 2017</a></blockquote>
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-				</div>
-			</section>
-			<section>
-			<h2>Some other thoughts about automatic testing</h2>
-			<div style="display: flex; flex-direction: row">
-				<div>
-					<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">&quot;Automated accessibility tests aren’t a turnkey solution, nor are they a silver bullet. There are some limitations to keep in mind when using them.&quot; Another great article by <a href="https://twitter.com/ericwbailey?ref_src=twsrc%5Etfw">@ericwbailey</a> <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> <a href="https://t.co/xeAvAHK9qY">https://t.co/xeAvAHK9qY</a></p>&mdash; Manuel Matuzovi? (@mmatuzo) <a href="https://twitter.com/mmatuzo/status/1040203038227619840?ref_src=twsrc%5Etfw">13 septembre 2018</a></blockquote>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
-				<div style="margin-left:3rem;">
-					<blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr"><p lang="en" dir="ltr">The Importance Of Manual Accessibility Testing: Automated <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> tests are a great resource to have, but they can’t automatically make your site accessible. Use them as one step of a larger testing process.  <a href="https://t.co/tuTZMKQUQf">https://t.co/tuTZMKQUQf</a> by <a href="https://twitter.com/ericwbailey?ref_src=twsrc%5Etfw">@ericwbailey</a></p>&mdash; Deque Systems (@dequesystems) <a href="https://twitter.com/dequesystems/status/1040303231430221825?ref_src=twsrc%5Etfw">13 septembre 2018</a></blockquote>
-					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
-			</div>
-			</section>
-
-			<section>
-					<h2>Thanks</h2>
-					<ul>
-						<li>Twitter : @arigaud_ca</li>
-						<li>LinkedIn : https://ca.linkedin.com/in/arthurrigaud</li>
-					</ul>
-					
-	
-			</section>
 
 			</div>
 		</div>
