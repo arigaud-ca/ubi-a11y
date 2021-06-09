@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+		.twitter-tweet.twitter-tweet-rendered {width:145%!important;}
+		.EmbeddedTweet {max-width:820px!important;}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				 <h1 style="font-size:4rem;">Automated Tools for Testing Accessibility</h1>
+									<h2></h2>
+									<p>
+										<small>by Arthur RIGAUD</small>
+					</p>
+				</section>
+				<section>Slide 2</section>
+				<section>
+
+					<h2>Some quotes</h2>
+					<div style="display: flex; flex-direction: row">
+						<div>
+							<blockquote style="width:80%" class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">While automatic testing tools are useful, testing with <a href="https://twitter.com/hashtag/disabled?src=hash&amp;ref_src=twsrc%5Etfw">#disabled</a> user testers, as we have always done, is extremely valuable and brings unique <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> insights. Working in partnership with disabled people is productive and important.</p>&mdash; Robyn Hunt (@AccEase) <a href="https://twitter.com/AccEase/status/1018590751930789888?ref_src=twsrc%5Etfw">15 juillet 2018</a></blockquote>
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div style="margin-left:3rem;">
+							<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">&quot;Automation can do a lot of grunt work  for you – but in the end, you’re going to need to check your work.&quot; nailed<a href="https://t.co/KMkcfrpwh6">https://t.co/KMkcfrpwh6</a></p>&mdash; Steve Faulkner (@stevefaulkner) <a href="https://twitter.com/stevefaulkner/status/828668305846202370?ref_src=twsrc%5Etfw">6 février 2017</a></blockquote>
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+					</div>
+				</section>
+				<section>
+				<h2>Some quotes</h2>
+				<div style="display: flex; flex-direction: row">
+					<div>
+						<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">&quot;Automated accessibility tests aren’t a turnkey solution, nor are they a silver bullet. There are some limitations to keep in mind when using them.&quot; Another great article by <a href="https://twitter.com/ericwbailey?ref_src=twsrc%5Etfw">@ericwbailey</a> <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> <a href="https://t.co/xeAvAHK9qY">https://t.co/xeAvAHK9qY</a></p>&mdash; Manuel Matuzovi? (@mmatuzo) <a href="https://twitter.com/mmatuzo/status/1040203038227619840?ref_src=twsrc%5Etfw">13 septembre 2018</a></blockquote>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+					<div style="margin-left:3rem;">
+						<blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr"><p lang="en" dir="ltr">The Importance Of Manual Accessibility Testing: Automated <a href="https://twitter.com/hashtag/a11y?src=hash&amp;ref_src=twsrc%5Etfw">#a11y</a> tests are a great resource to have, but they can’t automatically make your site accessible. Use them as one step of a larger testing process.  <a href="https://t.co/tuTZMKQUQf">https://t.co/tuTZMKQUQf</a> by <a href="https://twitter.com/ericwbailey?ref_src=twsrc%5Etfw">@ericwbailey</a></p>&mdash; Deque Systems (@dequesystems) <a href="https://twitter.com/dequesystems/status/1040303231430221825?ref_src=twsrc%5Etfw">13 septembre 2018</a></blockquote>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</div>
+				</section>
+
+				<section>Slide 2</section>
+				<section>
+						<h2>The tools</h2>
+						<ul>
+							<li>Pa11y (HTML Code Sniffer)</li>
+							<li>Axe Core (Deque)</li>
+							<li>Lighthouse (Google - Accessibility powered by Axe)</li>
+							<li>BBC a11y</li>
+						</ul>
+				</section>
+				<section>
+						<h2>Why this tools?</h2>
+						<ul>
+							<li>They are free to use</li>
+							<li>Available via GIT and NPM</li>
+							<li>They are open source</li>
+							<li>You can contribute</li>
+						</ul>
+				</section>
+				<section>
+						<h2>NPM</h2>
+						<ul>
+							<li>Stands for Node Package Manager</li>
+							<li>Default package manager for the JavaScript runtime environment Node.js</li>
+							<li></li>
+						</ul>
+				</section>
+				<section>
+						<h2>Pa11y</h2>
+						<p>Uses HTML Code Sniffer Engine</p>
+						<p><a href="https://www.npmjs.com/package/pa11y">pa11y npm page</a></p>
+								
+							
+						<pre style="width:90%">
+	npm install pa11y --save-dev
+						</pre>
+						<p>To use it you can add in "scripts" in your package.json file</p>
+						<pre style="width:90%">
+	"scripts": {
+		"pa11y": "pa11y"
+	}
+						</pre>
+				</section>
+				<section>
+					<h2>Some examples with pa11y</h2>
+				<pre style="width:90%"><code class="hljs">
+pa11y &lt;url&gt;
+pa11y --include-warnings &lt;url&gt;
+pa11y --include-warnings &lt;url&gt; -R &lt;elements you want to test&gt;
+pa11y --include-warnings &lt;url&gt; -E &lt;elements you exclude&gt;
+pa11y --include-warnings &lt;url&gt; -E &lt;elements you exclude&gt;
+				
+
+
+Violation of "region" with 1 occurrences!
+Ensures all page content is contained by landmarks. Correct invalid elements at:
+ - html
+For details, see: https://dequeuniversity.com/rules/axe/3.2/region
+
+Violation of "tabindex" with 3 occurrences!
+Ensures tabindex attribute values are not greater than 0. Correct invalid elements at:
+ - .banner-close-button
+ - a[aria-label="Privacy\ Policy"]
+ - a[aria-label="Terms\ of\ Use"]
+For details, see: https://dequeuniversity.com/rules/axe/3.2/tabindex
+
+71 Accessibility issues detected.
+
+Please note that only 20% to 50% of all accessibility issues can automatically be detected.
+Manual testing is always required. For more information see:
+https://dequeuniversity.com/curriculum/courses/testingmethods
+
+
+
+
+</pre></code>
+			</section>
+<section>
+					<h2>Pretty Code</h2>
+				<pre style="width:90%">
+pa11y https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com -R .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel,header,footer
+				</pre>
+			</section>
+			<section>
+					<h2>Pretty Code</h2>
+				<pre style="width:90%">
+pa11y https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com -R .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel,header,footer
+				</pre>
+			</section>
+			<section>
+					<h2>BBC a11y</h2>
+				<pre style="width:90%">
+pa11y https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com
+pa11y --include-warnings https://portail.lotoquebec.com -R .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel
+pa11y --include-warnings https://portail.lotoquebec.com -E .fn-carousel,header,footer
+				</pre>
+			</section>
+			<section>
+					<h2>BBC a11y</h2>
+					<p>Project by BBC in the UK to test their own accessibility standards</p>
+					<p><a href="https://github.com/bbc/bbc-a11y">Documentation on Github</a></p>
+							
+						
+				    <pre style="width:90%">
+npm install bbc-a11y --save-dev
+					</pre>
+					<p>To use it you can add in "scripts" in your package.json file</p>
+					<pre style="width:90%">
+"scripts": {
+	"a11y": "bbc-a11y"
+}
+					</pre>
+			</section>
+			<section>
+					<h2>BBC a11y</h2>
+					<p>Let's test it!</p>
+					
+
+			</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
