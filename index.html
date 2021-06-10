@@ -50,7 +50,7 @@
 					<ul>
 						<li>Lighthouse (Chrome / Desktop) : 81 / 100</li>
 						<li>HTML Code Sniffer : 97 A / 128 AA</li>
-						<li>Wave 77 errors / 54 erreurs de contraste</li>
+						<li>Wave 77 errors / 54 contrast errors</li>
 					</ul>
 					
 				</section>
@@ -86,36 +86,19 @@
 			<section>
 				<h1>Level A</h1>
 				<ul>
-					<li>2.5.1 (WCAG 2.1)</li>
-					<li>1.1.1: Non-Text Content</li>	
+					<li>2.5.2: Pointer Cancellation (WCAG 2.1)</li>	
 					<li>1.2.2 Captions (prerecorded) - not in the page</li>
 				</ul>
 		    </section>
 			<section>
 				<h1>Level A</h1>
-				<h2>2.5.1: Pointer gestures (WCAG 2.1)</h2>
+				<h2>2.5.1: Pointer Cancellation (WCAG 2.1)</h2>
 				<ul>
 					<li>Impairement : Motor</li>
 				</ul>
-				<p>
-
-				</p>
+				<p>On a touch screen (non mobile), pointing one menu item could launch click on the link</p>
 		    </section>
-			<section>
-				<h1>Level A</h1>
-				<h2>1.1.1: Non-Text Content</h2>
-				<ul>
-					<li>Impairement : visual</li>
-				</ul>
-				<p>SVG Ubisoft Store
-					<pre style="width:90%">
-						<code class="hljs">
-
-					      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ubisoft_x5F_Store_x5F_Black" x="0px" y="0px" viewBox="0 0 971.5 102" style="enable-background:new 0 0 971.5 102; padding-top: 10px;" xml:space="preserve"></svg>
-						</code>
-					</pre>
-				</p>	
-		    </section>
+			
 			<section>
 				<h1>Level A</h1>
 				<h2>1.2.2 Captions (prerecorded)</h2>
@@ -139,13 +122,48 @@
 
 
 			<section>
-				<h2>Level AA</h2>
+				<h1>Level AA</h1>
 				<ul>
-					<li>2.4.7</li>
-					<li>1.4.3</li>
+					<li>2.4.7 Focus Visible</li>
+					<li>1.4.3 Contrast ratio</li>
 				</ul>
 		    </section>
-			
+			<section>
+				<h1>Level AA</h1>
+				<h2>2.4.7 Focus Visible</h2>
+				<ul>
+					<li>Impairement : cognitive</li>
+				</ul>
+				<p>It is visually apparent which page element has the current keyboard focus (i.e., as you tab through the page, you can see where you are).
+
+					<pre style="width:90%">
+						<code class="hljs">
+							a:focus, button:focus, div:focus, img:focus {
+								outline: none;
+							}
+					    </code>
+					</pre>
+				</p>
+				<p>Note it seems that in preparation to WCAG 2.2, 2.4.7 criteria will be lowered to level A. I considered it as level AA  <a href="https://github.com/w3c/wcag/issues/1041">> See issue 1041</a></p>
+				
+				
+
+		    </section>
+			<section>
+				<h1>Level AA</h1>
+				<h2>1.4.3 : Contrast ratio</h2>
+				<ul>
+					<li>Impairement : visual</li>
+				</ul>
+				<p>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation: change text colour to #00829b.
+					
+					<pre style="width:90%">
+						<code class="hljs">
+							<a class="main-nav-item has-sub-menu " data-tc100="Games" href="https://store.ubi.com/ca/games/?lang=en" style="color: " data-background-color="white" data-color-hover="#008aa4"> Games </a>
+					    </code>
+					</pre>
+				</p>	
+		    </section>
 			<section>
 				<h2>Level AA</h2>
 				<ul>
@@ -153,6 +171,15 @@
 					<li>1.4.3</li>
 				</ul>
 		    </section>
+
+
+			
+
+			The visual presentation of text and images of text has a contrast ratio of at least 4.5:1
+
+
+
+
 			<section>
 				<h2>Best Practice</h2>
 				<ul>
