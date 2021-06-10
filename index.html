@@ -40,9 +40,9 @@
 				</section>
 				<section>
 						<h2>Scope</h2>
-						<p>https://store.ubi.com/ca/ubisoftplus/
-							and French version https://store.ubi.com/ca/ubisoftplus/?lang=fr
-							chrome 91 win10 ENG Chrome in french</p>
+						<p><a href="https://store.ubi.com/ca/ubisoftplus/">https://store.ubi.com/ca/ubisoftplus/</a></p>
+						<p>and French version <a href="https://store.ubi.com/ca/ubisoftplus/?lang=fr">https://store.ubi.com/ca/ubisoftplus/?lang=fr</a>
+						<p>Chrome 91 win10 ENG, Chrome in french</p>
 				</section>
 				<section>
 					<h1 style="font-size:4rem;">Tools used to test</h1>
@@ -135,14 +135,13 @@
 					<li>Impairement : cognitive</li>
 				</ul>
 				<p>It is visually apparent which page element has the current keyboard focus (i.e., as you tab through the page, you can see where you are).
-
-					<pre style="width:90%">
-						<code class="hljs">
-							a:focus, button:focus, div:focus, img:focus {
-								outline: none;
-							}
-					    </code>
-					</pre>
+<pre style="width:90%">
+<code class="hljs">
+a:focus, button:focus, div:focus, img:focus {
+   outline: none;
+}
+</code>
+</pre>
 				</p>
 				<p>Note it seems that in preparation to WCAG 2.2, 2.4.7 criteria will be lowered to level A. I considered it as level AA  <a href="https://github.com/w3c/wcag/issues/1041">> See issue 1041</a></p>
 				
@@ -155,40 +154,37 @@
 				<ul>
 					<li>Impairement : visual</li>
 				</ul>
-				<p>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation: change text colour to #00829b.
+				<p>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation: change text colour to #00829b.</p>
 					
-					<pre style="width:90%">
-						<code class="hljs">
-							<a class="main-nav-item has-sub-menu " data-tc100="Games" href="https://store.ubi.com/ca/games/?lang=en" style="color: " data-background-color="white" data-color-hover="#008aa4"> Games </a>
-					    </code>
-					</pre>
+<pre style="width:90%">
+<code class="hljs">
+<a class="main-nav-item has-sub-menu " data-tc100="Games" href="https://store.ubi.com/ca/games/?lang=en" style="color:" data-background-color="white" data-color-hover="#008aa4">Games </a>
+</code>
+</pre>
 				</p>	
 		    </section>
-			<section>
-				<h2>Level AA</h2>
-				<ul>
-					<li>2.4.7</li>
-					<li>1.4.3</li>
-				</ul>
-		    </section>
+		
+			
 
 
 			
-
-			The visual presentation of text and images of text has a contrast ratio of at least 4.5:1
-
-
-
-
 			<section>
 				<h2>Best Practice</h2>
 				<ul>
-					<li></li>
-					<li></li>
-						
+					<li>Title attribute text is the same as text or alternative text.</li>
+				</ul>	
 					
-				</ul>
+					 
+<p>The advisory information presented in the title should not be identical to or very similar to the element text or alternative text.</p> 	
+<pre style="width:90%">
+<code class="hljs">
+<a href="https://www.ubisoft.com" target="_blank" title="Ubisoft.com" class="font-regular">Ubisoft.com</a>
+</code>
+</pre>					
+				
 		    </section>
+
+			
 			<section>
 				<h1>Sources</h1>
 				<ul>
@@ -210,25 +206,37 @@
 					
 				</ul>
 		    </section>	
+			
+
+
+
+
+
+
+
+
+			<section>
+				<h2>Best Practice</h2>
+				<ul>
+					<li>Noscript</li>
+				</ul>	
+					
+					 
+<p>Ensure that elements with script are accessible, using noscript tag isn't sufficient to provide accessibility</p> 	
+<pre style="width:90%">
+<code class="hljs">
+<noscript><p class="browser-error">Your browser's Javascript functionality is turned off. Please turn it on so that you can experience the full capabilities of this site.</p></noscript>
+</code>
+</pre>					
 				
-				
-				
-				
-				
-				
-				
-				
-				<section>
-					<h2>Some examples with pa11y</h2>
-				<pre style="width:90%"><code class="hljs">
-	pa11y &lt;url&gt;
-	pa11y --include-warnings &lt;url&gt;
-	pa11y --include-warnings &lt;url&gt; -R &lt;elements you want to test&gt;
-	pa11y --include-warnings &lt;url&gt; -E &lt;elements you exclude&gt;
-	pa11y --include-warnings &lt;url&gt; -E &lt;elements you exclude&gt;
-	</pre></code>
-			</section>			
-				
+		    </section>
+
+
+
+
+
+
+								
 			
 
 			</div>
