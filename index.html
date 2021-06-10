@@ -24,6 +24,7 @@
 		<style>
 		.twitter-tweet.twitter-tweet-rendered {width:145%!important;}
 		.EmbeddedTweet {max-width:820px!important;}
+		p.left{font-size: 1.5rem;text-align: left;}
 
 		</style>
 
@@ -32,7 +33,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-				 <h1 style="font-size:4rem;">Ubisoft +  Audit as of 04/06</h1>
+				 <h1 style="font-size:4rem;">Ubisoft +  Audit as of 06/04</h1>
 									<h2></h2>
 									<p>
 										<small>by Arthur RIGAUD</small>
@@ -96,7 +97,7 @@
 				<ul>
 					<li>Impairement : Motor</li>
 				</ul>
-				<p>On a touch screen (non mobile), pointing one menu item could launch click on the link</p>
+				<p class="left">On a touch screen (non mobile), pointing one menu item could launch click on the link</p>
 		    </section>
 			
 			<section>
@@ -106,12 +107,12 @@
 					<li>Impairement : hearing</li>
 					<li>Failure <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F8.html">Technique F8</a></li> 
 				</ul>
-				<p>Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important sound effects</p>
-				<p><a href="https://store.ubi.com/ca/game?lang=en&pid=5e84a5065cdf9a21c0b4e737&dwvar_5e84a5065cdf9a21c0b4e737_Platform=pcdl&edition=Ultimate%20Edition&source=detail">Video : Assassin's Creed Valhalla</a></p>
-				<p>Source : <a href="https://www.youtube.com/watch?v=L0Fr3cS3MtY">https://www.youtube.com/watch?v=L0Fr3cS3MtY</a></p> 
+				<p class="left">Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important sound effects</p>
+				<p class="left"><a href="https://store.ubi.com/ca/game?lang=en&pid=5e84a5065cdf9a21c0b4e737&dwvar_5e84a5065cdf9a21c0b4e737_Platform=pcdl&edition=Ultimate%20Edition&source=detail">Video : Assassin's Creed Valhalla</a></p>
+				<p class="left">Source : <a href="https://www.youtube.com/watch?v=L0Fr3cS3MtY">https://www.youtube.com/watch?v=L0Fr3cS3MtY</a></p> 
 										
-				<p>In french, syntax error ('tonerre')</p>
-				<p>Music would need title and lyrics (with translation)</p>
+				<p class="left">In french, syntax error ('tonerre')</p>
+				<p class="left">Music would need title and lyrics (with translation)</p>
 		    </section>
 			
 
@@ -134,7 +135,7 @@
 				<ul>
 					<li>Impairement : cognitive</li>
 				</ul>
-				<p>It is visually apparent which page element has the current keyboard focus (i.e., as you tab through the page, you can see where you are).
+				<p class="left">It is visually apparent which page element has the current keyboard focus (i.e., as you tab through the page, you can see where you are).
 <pre style="width:90%">
 <code class="hljs">
 a:focus, button:focus, div:focus, img:focus {
@@ -143,7 +144,7 @@ a:focus, button:focus, div:focus, img:focus {
 </code>
 </pre>
 				</p>
-				<p>Note it seems that in preparation to WCAG 2.2, 2.4.7 criteria will be lowered to level A. I considered it as level AA  <a href="https://github.com/w3c/wcag/issues/1041">> See issue 1041</a></p>
+				<p class="left">Note it seems that in preparation to WCAG 2.2, 2.4.7 criteria will be lowered to level A. I considered it as level AA  <a href="https://github.com/w3c/wcag/issues/1041">> See issue 1041</a></p>
 				
 				
 
@@ -154,14 +155,14 @@ a:focus, button:focus, div:focus, img:focus {
 				<ul>
 					<li>Impairement : visual</li>
 				</ul>
-				<p>This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation: change text colour to #00829b.</p>
+				<p class="left">This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 4.06:1. Recommendation: change text colour to #00829b.</p>
 					
 <pre style="width:90%">
 <code class="hljs">
 <a class="main-nav-item has-sub-menu " data-tc100="Games" href="https://store.ubi.com/ca/games/?lang=en" style="color:" data-background-color="white" data-color-hover="#008aa4">Games </a>
 </code>
 </pre>
-				</p>	
+				
 		    </section>
 		
 
@@ -173,7 +174,7 @@ a:focus, button:focus, div:focus, img:focus {
 				</ul>	
 					
 					 
-<p>The advisory information presented in the title should not be identical to or very similar to the element text or alternative text.</p> 	
+<p class="left">The advisory information presented in the title should not be identical to or very similar to the element text or alternative text.</p> 	
 <pre style="width:90%">
 <code class="hljs">
 <a href="https://www.ubisoft.com" target="_blank" title="Ubisoft.com" class="font-regular">Ubisoft.com</a>
@@ -186,20 +187,18 @@ a:focus, button:focus, div:focus, img:focus {
 			<section>
 				<h1>Sources</h1>
 				<ul>
-					<li>W3C WGAG 2.1 - english - https://www.w3.org/TR/WCAG21/</li>
-					<li>W3C WCAG 2.0 - FR https://www.w3.org/Translations/WCAG20-fr/ traduction officielle en français Braillenet</li>
-					<li>RGAA 4.1 - https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/</li>
-							
-					
+					<li>W3C WGAG 2.1 - english - <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></li>
+					<li>W3C WCAG 2.0 - FR <a href="https://www.w3.org/Translations/WCAG20-fr/">https://www.w3.org/Translations/WCAG20-fr/</a> traduction officielle en français Braillenet</li>
+					<li>RGAA 4.1 - <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/">https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode-rgaa/criteres/</a></li>
 				</ul>
 		    </section> 
 			<section>
 				<h1>Sources (2)</h1>
 				<ul>
-					<li>WAI https://www.w3.org/WAI/media/av/</li>
-					<li>RAAMM https://labo.raamm.org/formation/</li>
-					<li>WCAG 2.1 https://www.levelaccess.com/wcag-2-1-exploring-new-success-criteria/</li>
-					<li>RAAMM clientèles cibles https://labo.raamm.org/formation/clienteles-cibles/</li>
+					<li>WAI Making audio and video accessible <a href="https://www.w3.org/WAI/media/av/">https://www.w3.org/WAI/media/av/</a></li>
+					<li>RAAMM Formation<a href="https://labo.raamm.org/formation/">https://labo.raamm.org/formation/</a></li>
+					<li>WCAG 2.1 <a href="https://www.levelaccess.com/wcag-2-1-exploring-new-success-criteria/">https://www.levelaccess.com/wcag-2-1-exploring-new-success-criteria/</a></li>
+					<li>RAAMM clientèles cibles <a href="https://labo.raamm.org/formation/clienteles-cibles/">https://labo.raamm.org/formation/clienteles-cibles/</a></li>
 								
 					
 				</ul>
@@ -251,7 +250,7 @@ a:focus, button:focus, div:focus, img:focus {
 				</ul>	
 					
 					 
-<p>Ensure that elements with script are accessible, using noscript tag isn't sufficient to provide accessibility</p> 	
+<p class="left">Ensure that elements with script are accessible, using noscript tag isn't sufficient to provide accessibility</p> 	
 <pre style="width:90%">
 <code class="hljs">
 <noscript><p class="browser-error">Your browser's Javascript functionality is turned off. Please turn it on so that you can experience the full capabilities of this site.</p></noscript>
